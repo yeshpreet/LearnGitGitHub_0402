@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test name="Test_grouping_practice">
+  	<groups>
+  		<define name="A">
+  			<include name="Arithmatic"></include>
+  			<include name="Alpha"></include>
+  		</define>
+  		<run>
+  			<include name="A"> </include> //optional to run all methods which are defined above.
+  			<include name="Arithmatic"> </include>
+  			<include name="Alpha"> </include>
+  		</run>
+  	</groups>
+    <classes>
+      <class name="Grouping_Demo.Grouping_Practice"/>
+    </classes>
+  </test> <!-- Test_grouping_practice -->
+</suite> <!-- Suite -->
